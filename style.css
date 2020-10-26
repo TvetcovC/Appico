@@ -181,7 +181,9 @@ header h1 {
     color: #444;
     margin-bottom: 15px;
 } 
-
+.pricing .pricing-items span {
+    font-size: 15px;
+}
 .pricing .pricing-items p {
     font-size: 13px;
     margin-bottom: 15px;

@@ -1,0 +1,231 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 200px 0;
+    line-height: 23px;
+}
+
+.features {
+    background-color: #f7f7f7;
+    padding: 100px 0;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    padding: 45px 0;
+}
+
+header h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #444;
+    padding-bottom: 20px;
+}
+
+.features header h2 {
+    color: #777;
+}
+
+.features .row > * {
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+}
+
+.features .row > img {
+    width: 25%;
+    margin: 0 4%;
+    animation: up-down 2.5s linear infinite;
+}
+
+.features .row > ul:first-child {
+    text-align: right;
+}
+
+.features .row h3 {
+    font-size: 18px;
+    padding: 15px 5px;
+    font-weight: 700;
+    color: #444
+}
+
+.features .row .paragraph-left {
+    padding: 20px 0 20px 20px;
+    color: #777;
+    border: 2px solid #888;
+    border-right: none;
+    transition: 0.5s;
+}
+
+.features .row .paragraph-right {
+    padding: 20px 20px 20px 0;
+    color: #777;
+    border: 2px solid #888;
+    border-left: none;
+    transition: 0.5s;
+}
+
+.features li:hover .paragraph-left,
+.features li:hover .paragraph-right {
+    border-color: #005bea;
+}
+
+.features .left-li::after {
+    content: "";
+    background-color: #f7f7f7;
+    display: block;
+    width: 100%;
+    height: 20px;
+    transform: translateY(-50px);
+    transition: 0.5s;
+    transition-delay: 0.25s;
+}
+
+.features .left-li:hover::after {
+    width: 40%;
+    margin-left: 60%;
+}
+
+.features .right-li::after {
+    content: "";
+    background-color: #f7f7f7;
+    display: block;
+    width: 100%;
+    height: 20px;
+    transform: translateY(-50px);
+    transition: 0.5s;
+    transition-delay: 0.25s;
+}
+
+.features .right-li:hover::after {
+    width: 40%;
+}
+
+.features li .icons-left {
+    transform: translateX(40px) translateY(-135px);
+    background-color: white;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    display: inline-block;
+    text-align: center;    
+}
+
+.features li .icons-left svg {
+    transform: translateY(7.5px);
+}
+
+.features li:hover .icons-left{
+    background-color: #005bea;
+}
+.features li:hover .icons-left svg{
+    fill: white;
+}
+
+.features li .icons-right {
+    transform: translateX(-40px) translateY(-135px);
+    background-color: white;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    display: inline-block;
+    text-align: center;    
+}
+
+.features li .icons-right svg {
+    transform: translateY(7.5px);
+}
+
+.features li:hover .icons-right{
+    background-color: #005bea;
+}
+.features li:hover .icons-right svg{
+    fill: white;
+}
+
+@keyframes up-down {
+    0% {transform: translateY(-15px);}
+    50% {transform: translateY(15px);}
+    100% {transform: translateY(-15px);}
+}
+
+.pricing .pricing-items>li{
+    display: inline-block;
+    padding: 25px;
+    width: 203px;
+    height: 423px;
+    border: 1px solid #ddd;
+    margin-right: 15px;
+}
+
+.pricing .pricing-items .pricing-head {
+    padding: 20px 0 30px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 30px;
+}
+
+.pricing .pricing-items h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.pricing .pricing-items h4 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #444;
+    margin-bottom: 15px;
+} 
+
+.pricing .pricing-items p {
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.pricing .pricing-list {
+    margin-bottom: 40px;
+}
+
+.pricing .pricing-list li {
+    margin-bottom: 10px;
+}
+
+.pricing .pricing-list li::before{
+    font-family: 'FontAwesome';
+    content: '\f00c';
+    color: #25d25e;
+    padding-right: 10px;
+}
+.pricing .pricing-list #red::before{
+    font-family: 'FontAwesome';
+    content: '\f00d';
+    color: #ff0000;
+}
+
+.pricing .pricing-button a {
+    text-decoration: none;
+    background: #005bea;
+    color: #fff;
+    line-height: 45px;
+    display: inline-block;
+    padding: 0 25px;
+    border-radius: 25px;
+    font-size: 12px;
+}
+
+.pricing .pricing-items li:hover, 
+.pricing .pricing-items li:hover h3,
+.pricing .pricing-items li:hover h4 {
+    color: white; 
+    background-color: #005bea;
+}
+
+.pricing .pricing-items li:hover .pricing-button a{
+    background: #fff;
+    color: #005bea;
+}
